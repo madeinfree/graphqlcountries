@@ -1,0 +1,56 @@
+type Translations {
+  br: String
+  de: String
+  es: String
+  fa: String
+  fr: String
+  hr: String
+  it: String
+  ja: String
+  nl: String
+  pt: String
+}
+type RegionalBloc {
+  acronym: String
+  name: String
+}
+type Language {
+  iso639_1: String
+  iso639_2: String
+  name: String
+  nativeName: String
+}
+type Currencie {
+  code: String
+  name: String
+  symbol: String
+}
+type Contrie {
+  alpha2Code: String
+  alpha3Code: String
+  altSpellings: [String]
+  area: Int
+  borders: [String]
+  callingCodes: [String]
+  capital: String
+  currencies: [Currencie]
+  demonym: String
+  flag: String
+  gini: Int
+  languages: [Language]
+  latlng: [Int]
+  name: String
+  nativeName: String
+  numericCode: String
+  population: Int
+  region: String
+  regionalBlocs: [RegionalBloc]
+  subregion: String
+  timezones: [String]
+  topLevelDomain: [String]
+  translations: Translations
+  cioc: String
+}
+type Query {
+  countries: [Contrie]
+}

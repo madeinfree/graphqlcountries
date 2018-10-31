@@ -1,0 +1,13 @@
+{
+  "name": "graphqlcountries",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "dev": "graphpack"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "graphpack": "^1.0.2"
+  }
+}
